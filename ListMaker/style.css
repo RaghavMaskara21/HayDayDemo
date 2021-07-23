@@ -92,11 +92,19 @@ hr {
     margin: 1%;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 768px){
     /* For Mobile */
+   
+   
 }
 
-@media (min-width: 1200px){
+@media (min-width: 768px){
     /* For Laptop */
 }
 
+.bg-nav{
+    background-color:  #1ec1e0;
+}
+body{
+    padding-top: 15%;
+}

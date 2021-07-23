@@ -1,4 +1,4 @@
-@media (min-width: 1200px){
+@media (min-width: 768px){
     /* For Laptop */
     img{
   border: 2px solid black;
@@ -11,7 +11,7 @@
     }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 768px){
     /* For Mobile */
     .responsive {
     width: 96%;
@@ -46,11 +46,12 @@
 body{
         width: auto;
         background-color: #c4e8fc;
+        padding-top: 15%;
 }
 
 * { 
         margin: 0;
-        padding: 0;
+        
         box-sizing: border-box;
 }
 .card-title{
@@ -62,6 +63,23 @@ body{
     float: right;
 }
 
-span.navbar-toggler-icon{
-float: right;
+button.navbar-toggler{
+
+    margin-right: 5%;
+}
+.bg-nav{
+    background-color: #c4e8fc
+}
+footer{
+    background-color: black;
+    margin-bottom: 0;
+    padding: 2% 5% 5% 5%;
+}
+i{
+    color: white;
+}
+footer p{
+color: white;
+margin: 0;
+padding:0;
 }

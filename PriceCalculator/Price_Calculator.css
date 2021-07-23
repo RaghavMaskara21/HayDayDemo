@@ -1,14 +1,13 @@
 
         body{
             background-color: #1ec1e0;
-
+padding-top: 15%;
         }
         input {
             width: 40%;
             text-align:center;
             background-color: #ffffff;
-background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
         }
         h2{
             padding-top: 24px;
@@ -38,4 +37,115 @@ font-family: 'Shadows Into Light Two', cursive;
 
     div.container{
         background-color: white;
+    }
+
+    body{
+        background-color: #1ec1e0;
+    
+    background-size: cover;
+    background-size: 100% 100%;
+    padding: 0 10%;
+    width: 100%;
+    
+    }
+    input {
+        width: 40%;
+        text-align:center;
+        background-color: #ffffff;
+    
+    background-size: cover;
+    background-size: 100% 100%;
+    
+    }
+    
+    
+    .numinp{
+        
+        width: 70px;
+    }
+    .ratio{
+        width: 70px;
+    }
+    
+    .machineHeading {
+        color: red;
+    }
+    
+    .heading{
+        color: #99FF00;
+        
+    }
+    .foodName{
+        color: black;
+        width: 25%;
+    }
+    .foodLevel{
+        color: indigo;
+        width: 25%;
+        text-align: center;
+    }
+    .ratioInput{
+        color: khaki;
+        width: 25%;
+        
+    }
+    .quantityInput{
+        color: #99FF00;
+    }
+    div.container{
+        background-color: white;
+        padding: 0 7.5%;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    h1{
+        color: red;
+        font-family: 'Shadows Into Light Two', cursive;
+        padding-top: 2%;
+        text-align: center;
+    }
+    #total{
+        font-size: 1.5rem;
+        color: red;
+    }
+    #text1{
+        font-size: 1.1rem;
+        text-align: center;
+        color: red;
+    }
+    h4{
+        margin: 0;
+        padding: 0;
+    }
+    div.col3.heading{
+        margin: 0;
+        padding: 0;
+    }
+    .row>*{
+        padding-left: 0;
+    }
+    hr {
+        margin-top: 5px!important;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+    .ratio,.numinp{
+        margin: 1%;
+    }
+    
+    @media (max-width: 768px){
+        /* For Mobile */
+       
+       
+    }
+    
+    @media (min-width: 768px){
+        /* For Laptop */
+    }
+    
+    .bg-nav{
+        background-color:  #1ec1e0;
+    }
+    body{
+        padding-top: 15%;
     }
