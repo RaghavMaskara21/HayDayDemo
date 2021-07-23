@@ -11,6 +11,7 @@ padding-top: 15%;
         }
         h2{
             padding-top: 24px;
+            padding-bottom: 24px;
         }
         h3 {
             padding: 24px 0;
@@ -20,20 +21,7 @@ padding-top: 15%;
             padding: 4px 0;            
 font-family: 'Roboto Condensed', sans-serif;
         } 
-        h10{
-            font-size: 3rem;
-            color: #3136e2;
-        }
-        h11{
-            margin-top: 500px;
-            font-size: 2rem;       
-            }
-        h12{
-            font-size: 3rem;
-            text-align: center;
-            color: #fd4e34;            
-font-family: 'Shadows Into Light Two', cursive;
-        }
+
 
     div.container{
         background-color: white;
@@ -62,6 +50,8 @@ font-family: 'Shadows Into Light Two', cursive;
     .numinp{
         
         width: 70px;
+        border: none;
+        border-bottom: 2px solid red;
     }
     .ratio{
         width: 70px;
@@ -72,7 +62,7 @@ font-family: 'Shadows Into Light Two', cursive;
     }
     
     .heading{
-        color: #99FF00;
+        color: #0032c0;
         
     }
     .foodName{
@@ -90,7 +80,7 @@ font-family: 'Shadows Into Light Two', cursive;
         
     }
     .quantityInput{
-        color: #99FF00;
+        color: #0032c0;
     }
     div.container{
         background-color: white;
@@ -102,6 +92,8 @@ font-family: 'Shadows Into Light Two', cursive;
         font-family: 'Shadows Into Light Two', cursive;
         padding-top: 2%;
         text-align: center;
+        font-size: 3rem;
+        letter-spacing: 5px;
     }
     #total{
         font-size: 1.5rem;
@@ -149,3 +141,12 @@ font-family: 'Shadows Into Light Two', cursive;
     body{
         padding-top: 15%;
     }
+    
+    #mult{
+        border: 2px solid red;
+        border-radius: 8px;
+    }
+    label{
+        color: #0032c0;;
+    }
+

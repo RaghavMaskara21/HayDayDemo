@@ -1,0 +1,27 @@
+body{
+    background-image: url(https://onlyvectorbackgrounds.com/wp-content/uploads/2018/09/Abstract-Ambient-Light-Background-Day-Blue.jpg);
+    background-size: cover;
+    margin-left: 10%;
+} 
+#demo2{
+    font-size: 2rem;
+    font-weight: 800;
+    height: 30px;
+}
+h2{
+    text-align: center;
+}
+#myText{
+    margin-right: 10%;
+}
+#display{
+ margin-right: 10%;
+}
+h3{
+    font-size: 1.5rem;
+}
+#imge{
+width: 500px;
+border: 2px solid red;
+margin: 0 auto;
+}

@@ -43,11 +43,7 @@
     }
 }
 
-body{
-        width: auto;
-        background-color: #c4e8fc;
-        padding-top: 15%;
-}
+
 
 * { 
         margin: 0;
@@ -61,6 +57,12 @@ body{
 
 .card a{
     float: right;
+}
+
+body{
+    width: auto;
+    background-color: #c4e8fc;
+    padding-top: 15%;
 }
 
 button.navbar-toggler{

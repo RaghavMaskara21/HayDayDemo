@@ -86,17 +86,6 @@ list.pop();
 
 
 
-
-            fns.push("Total foods")
-                nums.push(total/2)
-                fns.push("Total Price")
-                nums.push(totalPrice/2)
-                fns.push("Total Price x " + mult)
-                nums.push((totalPrice/2)*mult)
-                fns.push("Total Blankets Required")
-                nums.push(((totalPrice*mult/2)/1098).toFixed(2))
-                fns.push("Total Rings Required")
-                nums.push(((totalPrice*mult/2)/824).toFixed(2))
     
             
             /*
@@ -112,10 +101,16 @@ list.pop();
         //     document.write("<div class=" + "container" + ">")
             for (idx in fns)
             {
-               dis = dis +  fns[idx] + " = " + nums[idx] + "\n";   
+               dis = dis + " &#9679; " +  fns[idx] + " = " + nums[idx] + "\n";   
                 // document.write("<h4 style= " + "padding-top:1px;padding-left:48px;" + ">" +fns[idx] + " = " + nums[idx] + "</h4>")
             }
- 
+
+            dis = dis + " \n";
+            dis = dis + "Total Foods = " + total/2 + "\n";
+            dis = dis + "Total Price = " + totalPrice/2 + "\n";
+            dis = dis + "Total Price * " + mult + " = " + (totalPrice/2)*mult + "\n";
+            dis = dis + "Total Blankets Required = " + ((totalPrice*mult/2)/1098).toFixed(2)+ "\n";
+            dis = dis + "Total Rings Required = " + ((totalPrice*mult/2)/824).toFixed(2)+ "\n";
             document.getElementById("display").innerHTML = dis;
             SetCookie("Price_Calculator", encode)
             //document.write(encode)
@@ -129,7 +124,7 @@ list.pop();
                 var ff = document.getElementById(foods[idx].tag)
                 ff.value    =   "0"
             }
-            
+            document.getElementById("display").innerHTML = "";
             onFoodChange()
         }
         
@@ -565,3 +560,14 @@ list.pop();
             }
             
             onFoodChange()
+
+            
+
+  function copyToClipboard(element) {
+    var $temp = $("<textarea>");
+    var brRegex = /<br\s*[\/]?>/gi;
+    $("body").append($temp);
+    $temp.val($(element).html().replace(brRegex, "\r\n")).select();
+    document.execCommand("copy");
+    $temp.remove();
+  }
