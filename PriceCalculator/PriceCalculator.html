@@ -7,7 +7,7 @@
     <title>Price Calculator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="Price_Calculator.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,15 +28,13 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                      <a class="nav-link" href="index.html">Home</a>
-                      <a class="nav-link" href="PriceCalculator/PriceCalculator.html">Price Calculator</a>
-                      <a class="nav-link" href="BemsCalculator/index.html">Bems Calculator</a>
-                      <a class="nav-link" href="#">Barn Size Calculator</a>
-                      <a class="nav-link active" aria-current="page" href="ListMaker/index2.html">Food List Maker</a>
-                      <a class="nav-link" href="#">Hay Day Mod Apk</a>
-                      <a class="nav-link" href="#">Buy Bems</a>
-                      <a class="nav-link" href="#">Buy Coins</a>
-                      <a class="nav-link" href="#">Contact Us</a>                
+                      <a class="nav-link" href="../index.html">Home</a>
+                      <a class="nav-link active" aria-current="page" href="PriceCalculator.html">Price Calculator</a>
+                      <a class="nav-link" href="../BemsCalculator/BemsCalculator.html">Bems Calculator</a>
+                      <a class="nav-link" href="../BarnSizeCalculator/BarnSizeCalculator.html">Barn Size Calculator</a>
+                      <a class="nav-link" href="../ListMaker/listMaker.html">Food List Maker</a>
+                      <a class="nav-link" href="../HayDayModApk/HayDayModApk.html">Hay Day Mod Apk</a>                      
+                      <a class="nav-link" href="../ContactUs/ContactUs.html">Contact Us</a>                
                     </div>
                   </div>
                 </div>
@@ -49,8 +47,8 @@
                 <h1>Price Calculator</h1>
                 <h2>            
                     <p id="total">Total Food Number: 0  </p> 
-                    <button type="button"  class="btn btn-outline-dark button1" onclick="resetFood()">Reset Food List</button>         
-                    </h2>            
+                    <button type="button"  class="btn btn-outline-danger button1" onclick="resetFood()">Reset Food List</button>         
+                </h2>            
                         
             </div>
 
@@ -59,10 +57,10 @@
      <!--Food List + JS Starts-->
         <div class="container mainBody">
             <div class="row">
-                <label for="multiplier">Enter The Multiplier</label>
-                <input type="number" id="mult" min="1" max="5" style="width: 60px;" id="multiplier" value="5" required> 
-    <p id="text1" >  Enter The Quantity Of Foods :- </p>
-    <br><br>  
+                <label class="col-9 col-md-6" for="multiplier">Enter The Multiplier :-</label>
+                <input class="col-3 col-md-6" type="number" id="mult" min="1" max="5" style="width: 60px;" id="multiplier" value="5" required> 
+    <p id="text1" >  Enter The Quantity Of Foods - </p>
+ 
     
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>   
@@ -70,18 +68,29 @@
 </div>
 
     </div>
-    <br><br>
+   
 
    <!--Food List + JS Ends-->
     
-
+<div class="butt">
    <button type="button" class="btn btn-outline-dark"  onclick="resetFood()">Reset Food List</button>  
-   <button type="button" class="btn btn-dark mx-3 "    onclick="commitFood()">Calculate</button> <br> <br>
+   <button type="button" class="btn btn-danger mx-3 "    onclick="commitFood()">Calculate</button> <br> <br>
+  </div>
 
    <p style="font-size:20px">Your List is:- </p>
-   <textarea id="display" rows="15" cols="30"></textarea>
-   <button onclick="copyToClipboard('#display')">Copy List</button> <br><br>
-   <p style="Text-align:center;font-size:30px"> Thank You !!! </p> <br> <br>
+   <textarea id="display" rows="15" cols="30"></textarea> <br>
+   <button class="copyButton" onclick="copyToClipboard('#display')">Copy List</button> <br><br>
+
+
+
+
+   <footer>
+    <a href="ContactUs/ContactUs.html" class="btn btn-outline-danger">Contact Us</a>  
+    <i class="fab fa-discord"></i>
+    <i class="fab fa-facebook"></i>
+    <i class="fab fa-facebook-messenger"></i>
+    <p>Website By- Raghav Maskara</p>
+  </footer>
 
     </body>
 

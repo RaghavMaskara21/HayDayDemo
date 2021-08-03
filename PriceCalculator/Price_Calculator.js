@@ -462,8 +462,8 @@ list.pop();
                 {
                     if (idx == 0)
                     {
-                        var t = document.getElementById(foods[idx].fn)
-                        t.innerHTML    =    foods[idx].fn + "(Total:" + total + ")"
+                        // var t = document.getElementById(foods[idx].fn)
+                        // t.innerHTML    =    foods[idx].fn + "(Total:" + total + ")"
                         last_fn  = foods[idx].fn
                     }
                     else

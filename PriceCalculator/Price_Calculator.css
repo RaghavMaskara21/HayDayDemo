@@ -1,108 +1,101 @@
 
-        body{
-            background-color: #1ec1e0;
-padding-top: 15%;
-        }
-        input {
-            width: 40%;
-            text-align:center;
-            background-color: #ffffff;
 
-        }
-        h2{
+h2{
             padding-top: 24px;
             padding-bottom: 24px;
-        }
-        h3 {
-            padding: 24px 0;
+            margin-bottom: 0;
+}
+
+h3 {
+            padding: 18px 0;
             font-size: 2rem;
-        }
-        .col-3 {
-            padding: 4px 0;            
-font-family: 'Roboto Condensed', sans-serif;
-        } 
+}
+        
+.col-3 {
+    padding: 4px 0;            
+    font-family: 'Roboto Condensed', sans-serif;
+} 
 
 
-    div.container{
-        background-color: white;
-    }
-
-    body{
-        background-color: #1ec1e0;
-    
+body{
+    background-color: #1ec1e0;    
     background-size: cover;
     background-size: 100% 100%;
-    padding: 0 10%;
-    width: 100%;
+ 
+}
     
-    }
-    input {
-        width: 40%;
-        text-align:center;
-        background-color: #ffffff;
-    
+input {
+    width: 40%;
+    text-align:center;
+    background-color: #ffffff;
     background-size: cover;
     background-size: 100% 100%;
+    background: transparent;
+}
     
-    }
     
+.numinp{        
+    width: 70px;
+    border: none;
+    border-bottom: 2px solid red;
+}
     
-    .numinp{
-        
-        width: 70px;
-        border: none;
-        border-bottom: 2px solid red;
-    }
-    .ratio{
-        width: 70px;
-    }
+.machineHeading {
+    color: red;
+}
     
-    .machineHeading {
-        color: red;
-    }
-    
-    .heading{
-        color: #0032c0;
-        
-    }
-    .foodName{
-        color: black;
-        width: 25%;
-    }
-    .foodLevel{
-        color: indigo;
-        width: 25%;
-        text-align: center;
-    }
-    .ratioInput{
-        color: khaki;
-        width: 25%;
-        
-    }
-    .quantityInput{
-        color: #0032c0;
-    }
-    div.container{
-        background-color: white;
+.heading{
+    color: #0032c0;
+}
+.foodName{
+    color: black;
+    width: 25%;
+}
+.foodLevel{
+    color: indigo;
+    width: 25%;
+    text-align: center;
+}
+
+.quantityInput{
+    color: #0032c0;
+}
+
+div.container{
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         padding: 0 7.5%;
         font-family: 'Roboto Condensed', sans-serif;
-    }
-    h1{
-        color: red;
-        font-family: 'Shadows Into Light Two', cursive;
-        padding-top: 2%;
-        text-align: center;
-        font-size: 3rem;
-        letter-spacing: 5px;
-    }
-    #total{
-        font-size: 1.5rem;
-        color: red;
-    }
+}
+ 
+h1{
+    color: red;
+    font-family: 'Shadows Into Light Two', cursive;
+    padding-top: 2%;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+#total{
+    font-size: 1.5rem;
+    color: red;
+}   
+
+label{
+    color: #0032c0;
+    font-size: 1.5rem;
+    margin-top: 2% !important;
+} 
+
     #text1{
-        font-size: 1.1rem;
+        font-family: 'Shadows Into Light Two', cursive;
+        font-size: 1.4rem;
         text-align: center;
-        color: red;
+        color: #920c0c;
+        margin: 2% 0;
+        padding: 2% 0;
     }
     h4{
         margin: 0;
@@ -125,15 +118,7 @@ font-family: 'Roboto Condensed', sans-serif;
         margin: 1%;
     }
     
-    @media (max-width: 768px){
-        /* For Mobile */
-       
-       
-    }
-    
-    @media (min-width: 768px){
-        /* For Laptop */
-    }
+
     
     .bg-nav{
         background-color:  #1ec1e0;
@@ -145,8 +130,125 @@ font-family: 'Roboto Condensed', sans-serif;
     #mult{
         border: 2px solid red;
         border-radius: 8px;
+        margin-top: 2%;
     }
-    label{
-        color: #0032c0;;
+    
+
+
+    .butt{
+        display: flex;
+        justify-content: flex-end;
+        margin: 5% 0;
+        padding: 0;
     }
+
+    footer{
+        background-color: black;
+        margin-bottom: 0;
+        padding: 2% 5% 5% 5%;
+    }
+    i{
+        color: white;
+    }
+    footer p{
+    color: white;
+    margin: 0;
+    padding:0;
+    }
+
+    textarea{
+        width: 90%;
+    }
+    
+    .copyButton {
+        position: relative;
+        display: inline-block;
+        padding: 0.25em 0.5em;
+        text-decoration: none;
+        color: #FFF;
+        background: #fd3535;/*button color*/
+        border-bottom: solid 2px #d27d00;/*daker color*/
+        border-radius: 4px;
+        box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+        font-weight: bold;
+    }
+    
+    .copyButton:active {
+        border-bottom: solid 2px #fd9535;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+    }
+
+    .foodLevel , .foodPrice {
+     text-align: center;
+    }
+
+    h4{
+        text-align: center;
+    }
+
+    @media (max-width: 768px){
+        /* For Mobile */
+       
+       
+    }
+
+@media (min-width: 1100px){
+        h1{
+            font-size: 700%;
+        }
+}
+    
+@media (min-width: 768px){
+        /* For Laptop */
+    body{
+        padding-top: 60px;
+    }
+    h1{
+        font-size: 400%;
+    }
+    .foodName{
+        text-align: center;
+    }
+    .quantityInput{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+    textarea{
+        width: 50%;
+    }
+    h2{
+        display: flex;
+        justify-content: space-between;
+    }
+    h2 p{
+        margin: auto 0;
+        padding: auto;
+    }
+    label.col-9{
+        margin-right: 0;
+        padding-right:0 ;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.5rem;
+    }
+    #mult{
+        margin-left: 3%;
+    }
+    #text1{
+        font-size: 2rem;
+    }
+    .foodName , .foodLevel , .foodPrice ,.numinp {
+        font-size: 1.5rem;
+    }
+    .machineHeading {
+        font-size: 3rem;
+    }
+
+
+
+}
 
