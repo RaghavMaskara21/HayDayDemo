@@ -21,21 +21,7 @@ margin-right: 5%;
 background-color: #c4e8fc
 }
 
-footer{
-background-color: black;
-margin-bottom: 0;
-padding: 2% 5% 5% 5%;
-}
 
-i{
-color: white;
-}
-
-footer p{
-color: white;
-margin: 0;
-padding:0;
-}
 
 
 @media (max-width: 768px){
@@ -43,7 +29,7 @@ padding:0;
     .responsive1 {
     width: 96%;
     height: auto;
-    margin: 0 5% 2% 2%;
+    padding-left: 3%;
     
     }
     /* .btn-links {
@@ -104,8 +90,33 @@ padding:0;
 
 }
 
+/* 
 
+FOOTER STARTS
 
+*/
+footer{
+    background-color: black;
+    margin-bottom: 0;
+    padding: 2% 5% 5% 5%;
+    margin-right: 0;
+    margin-top: 6%;
+}
+    
+i{
+    color: white;
+}
+    
+footer p{
+    color: white;
+    margin: 0;
+    padding:0;
+}
+
+.unq_btn{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .unq_btn a{
     display: inline-block;
@@ -139,3 +150,20 @@ color: #d6249f;
     -webkit-transform: rotate(60deg);
     transform: rotate(60deg);
 }
+
+@media (min-width: 768px){
+    /* For Laptop */
+    .unq_btn{
+        
+        justify-content: flex-start;
+    }
+    footer{
+        margin-top: 2%;
+    }
+}
+
+/*
+
+FOOTER ENDS
+
+*/
