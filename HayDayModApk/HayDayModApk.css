@@ -8,18 +8,10 @@ body{
 .bg-nav{
     background-color: #c4e8fc
 }
-footer{
-    background-color: black;
-    margin-bottom: 0;
-    padding: 2% 5% 5% 5%;
-}
-i{
-    color: white;
-}
-footer p{
-color: white;
-margin: 0;
-padding:0;
+
+main a img{
+    width: 60%;
+    padding-left: 10%;
 }
 
 /* 
