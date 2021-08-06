@@ -9,8 +9,9 @@ float: right;
 }
 
 body{
-width: auto;
-background-color: #c4e8fc;
+    width: auto;
+    background-color: #c4e8fc;
+    padding-top: 15%;
 }
 
 button.navbar-toggler{
@@ -21,7 +22,12 @@ margin-right: 5%;
 background-color: #c4e8fc
 }
 
-
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+}
 
 
 @media (max-width: 768px){
@@ -59,24 +65,27 @@ background-color: #c4e8fc
     }
 
 }
-
+nav img{  
+    max-width:100%;
+    height:45px;         
+}
 
 
 @media (min-width: 768px){
     /* For Laptop */
-    img{
-  border: 2px solid black;
-    }
+    
     /* .btn-links {
         display: flex;
         flex-direction: row;
      } */
      .responsive1{
          display: none;
+         border: 2px solid black;
      }
      .responsive2{         
          width: 80%;
          margin: 0 10%;
+         border: 2px solid black;
 
      }
      body{

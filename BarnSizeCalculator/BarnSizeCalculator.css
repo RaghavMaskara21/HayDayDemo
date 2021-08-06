@@ -8,6 +8,10 @@ body{
 .bg-nav{
     background-color: #c4e8fc;
 }
+nav img{  
+  max-width:100%;
+  height:45px;         
+}
 
 
 .imgDisplay{
